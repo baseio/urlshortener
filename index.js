@@ -58,7 +58,8 @@ app.put('*', function(req, res){
 		store[code] = {url:url, count:0};
 		fs.writeFileSync(file, JSON.stringify(store, null, "  "));
 		console.log( store );
-		res.send( JSON.stringify({status:"ok", code:code}) );
+		var dest = req.protocol + '://' + req.get('host') +'/'+ code;
+		res.send( JSON.stringify({status:"ok", code:code, url:dest}) );
 	}else{
 		res.send( JSON.stringify({status:"error", code:-2, message:"Provide target url as first url param"}) );
 	}
