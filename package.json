@@ -1,0 +1,26 @@
+{
+  "name": "urlshortener",
+  "version": "0.0.1",
+  "description": "simple url shortener service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://baseio@github.com/baseio/urlshortener.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/baseio/urlshortener/issues"
+  },
+  "homepage": "https://github.com/baseio/urlshortener#readme",
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "dotenv": "^1.2.0",
+    "express": "^4.13.3",
+    "nocache": "^0.3.0",
+    "shortid": "^2.2.2"
+  }
+}
